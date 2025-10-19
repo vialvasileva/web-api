@@ -19,11 +19,11 @@
 }
 
 .card-movie:hover {
-  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
 }
 
 .card-anime:hover {
-  box-shadow: 0 20px 40px rgba(241, 99, 130, 0.2);
+  box-shadow: 0 20px 40px rgba(241, 99, 130, 0.3);
 }
 
 .feature-icon {

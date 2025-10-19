@@ -52,7 +52,7 @@
   background: var(--card-bg);
   padding: 25px;
   border-radius: var(--border-radius);
-  border-left: 4px solid var(--primary-color);
+  border-left: 4px solid var(--secondary-color);
 }
 
 .info-box p {
