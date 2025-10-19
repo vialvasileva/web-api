@@ -1,14 +1,50 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web-api</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-    <h1>Главная</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="shortcut icon" href="images/icon.png" />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎬 Movie Site</h1>
+      <p class="subtitle">Ваш источник информации о фильмах и аниме</p>
+    </header>
+
+    <main>
+      <div class="features">
+        <div class="feature-card card-movie">
+          <div class="feature-icon">🎥</div>
+          <h2>Поиск фильмов</h2>
+          <p>Получите подробную информацию о любом фильме: год выпуска, жанр, рейтинг IMDb, актеры и постер</p>
+          <a href="/src/pages/movie.html" class="btn btn-primary">Искать фильмы</a>
+        </div>
+
+        <div class="feature-card card-anime">
+          <div class="feature-icon">🎌</div>
+          <h2>Факты об аниме</h2>
+          <p>Узнавайте интересные факты о различных аниме. Каждый раз новый случайный факт!</p>
+          <a href="/src/pages/anime.html" class="btn btn-secondary">Узнать факт</a>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <h3>О проекте</h3>
+        <p>Этот сайт использует три публичных API для предоставления информации о фильмах и аниме:</p><br>
+        <ul>
+          <li><strong>OMDb API</strong> - база данных фильмов</li>
+          <li><strong>Anime Facts API</strong> - факты об аниме</li>
+          <li><strong>Movies DB API</strong> - постеры фильмов</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>Учебный проект по веб-разработке</p>
+    </footer>
+  </div>
+</body>
 </html>
