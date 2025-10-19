@@ -1,0 +1,98 @@
+/* Поиск фильмов */
+.search-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 15px 20px;
+  background: var(--card-bg);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Загрузка */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--card-bg);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ошибка */
+.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--error-color);
+  margin-bottom: 20px;
+}
+
+/* Результат фильма */
+.movie-result {
+  display: flex;
+  gap: 30px;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--border-radius);
+}
+
+.movie-poster img {
+  width: 300px;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-info h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.movie-details p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.movie-details strong {
+  color: var(--primary-color);
+  margin-right: 10px;
+}

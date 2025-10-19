@@ -1,0 +1,60 @@
+/* Аниме секция */
+.anime-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.anime-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fact-result {
+  margin-top: 30px;
+}
+
+.fact-card {
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.fact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.2);
+}
+
+.fact-header h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.anime-id {
+  background: rgba(99, 102, 241, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.fact-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.info-box {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.info-box p {
+  color: var(--text-muted);
+}

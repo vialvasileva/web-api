@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Movie Site - информация о фильме и постер по поиску, а также разные факты об аниме!">
   <title>Главная</title>
   <link rel="shortcut icon" href="images/icon.png" />
-  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/index.css">
+
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>🎬 Movie Site</h1>
+      <h1>Movie Site</h1>
       <p class="subtitle">Ваш источник информации о фильмах и аниме</p>
     </header>
 
@@ -20,14 +23,14 @@
           <div class="feature-icon">🎥</div>
           <h2>Поиск фильмов</h2>
           <p>Получите подробную информацию о любом фильме: год выпуска, жанр, рейтинг IMDb, актеры и постер</p>
-          <a href="/src/pages/movie.html" class="btn btn-primary">Искать фильмы</a>
+          <a href="movie.html" class="btn btn-primary">Искать фильмы</a>
         </div>
 
         <div class="feature-card card-anime">
           <div class="feature-icon">🎌</div>
           <h2>Факты об аниме</h2>
           <p>Узнавайте интересные факты о различных аниме. Каждый раз новый случайный факт!</p>
-          <a href="/src/pages/anime.html" class="btn btn-secondary">Узнать факт</a>
+          <a href="anime.html" class="btn btn-secondary">Узнать факт</a>
         </div>
       </div>
 
@@ -42,8 +45,9 @@
       </div>
     </main>
 
-    <footer>
-      <p>Учебный проект по веб-разработке</p>
+    <footer class="footer">
+      <p class="footer-text">© 2025 Movie site. Команда студентов.</p>
+      <p class="footer-text">Учебный проект по веб-разработке</p>
     </footer>
   </div>
 </body>

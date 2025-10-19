@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Movie Site - информация о фильме и постер по поиску, а также разные факты об аниме!">
+  <title>Поиск фильмов</title>
+  <link rel="shortcut icon" href="images/icon.png" />
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/movie.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html">← Главная</a>
+      <a href="anime.html">Факты об аниме</a>
+    </nav>
+
+    <header>
+      <h1>Поиск фильмов</h1>
+    </header>
+
+    <main>
+      <div class="search-section">
+        <div class="search-box">
+          <input 
+            type="text" 
+            id="movieInput" 
+            placeholder="Введите название фильма (на английском)..."
+            class="input-field"
+          >
+          <button id="searchBtn" class="btn btn-primary">Получить инфу</button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+          <div class="spinner"></div>
+          <p>Загрузка...</p>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="movieResult" class="movie-result" style="display: none;">
+          <div class="movie-poster">
+            <img id="posterImg" src="" alt="Movie Poster">
+          </div>
+          <div class="movie-info">
+            <h2 id="movieTitle"></h2>
+            <div class="movie-details">
+              <p><strong>Год:</strong> <span id="movieYear"></span></p>
+              <p><strong>Жанр:</strong> <span id="movieGenre"></span></p>
+              <p><strong>Режиссер:</strong> <span id="movieDirector"></span></p>
+              <p><strong>Актеры:</strong> <span id="movieActors"></span></p>
+              <p><strong>Сюжет:</strong> <span id="moviePlot"></span></p>
+              <p><strong>Рейтинг IMDb:</strong> <span id="movieRating"></span></p>
+              <p><strong>Длительность:</strong> <span id="movieRuntime"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">© 2025 Movie site. Команда студентов.</p>
+      <p class="footer-text">Учебный проект по веб-разработке</p>
+    </footer>
+  </div>
+</body>
+</html>
