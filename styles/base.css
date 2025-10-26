@@ -244,3 +244,28 @@ body {
     order: 3;
   }
 }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .movie-result {
+    flex-direction: column;
+  }
+
+  .movie-poster img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .fact-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
