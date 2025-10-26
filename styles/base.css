@@ -132,7 +132,7 @@ header h1 {
   padding: 20px;
   border-radius: var(--border-radius);
   border-left: 4px solid var(--error-color);
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* Footer */
