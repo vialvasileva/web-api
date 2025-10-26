@@ -11,16 +11,24 @@
 </head>
 <body>
   <div class="container">
-    <nav class="nav">
-      <a href="index.html">← Main</a>
-      <a href="movie.html">Movie search</a>
-    </nav>
-
-    <header>
-      <h1>Facts about anime</h1>
+    <header class="fixed-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img src="images/icon.png" alt="Camera" class="logo-img">
+          <span class="logo-text">MovieSite</span>
+        </a>
+        
+        <div class="header-center">
+          <span class="header-title">Facts about anime</span>
+        </div>
+        
+        <button id="themeToggle" class="theme-toggle" title="Switch theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
     </header>
 
-    <main>
+    <main style="padding-top: 80px;">
       <div class="anime-section">
         <div class="anime-card">
           <button id="getFactBtn" class="btn btn-secondary btn-large">
@@ -60,6 +68,6 @@
   </div>
 
   <script type="module" src="/scripts/anime.js"></script>
-
+  <script src="/scripts/theme.js"></script>
 </body>
 </html>

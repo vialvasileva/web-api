@@ -11,16 +11,24 @@
 </head>
 <body>
   <div class="container">
-    <nav class="nav">
-      <a href="index.html">← Main</a>
-      <a href="anime.html">Facts about anime</a>
-    </nav>
-
-    <header>
-      <h1>Movie search</h1>
+    <header class="fixed-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img src="images/icon.png" alt="Camera" class="logo-img">
+          <span class="logo-text">MovieSite</span>
+        </a>
+        
+        <div class="header-center">
+          <span class="header-title">Movie Search</span>
+        </div>
+        
+        <button id="themeToggle" class="theme-toggle" title="Switch theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
     </header>
 
-    <main>
+    <main style="padding-top: 80px;">
       <div class="search-section">
         <div class="search-box">
           <input 
@@ -66,6 +74,6 @@
   </div>
 
   <script type="module" src="/scripts/movie.js"></script>
-  
+  <script src="/scripts/theme.js"></script>
 </body>
 </html>
