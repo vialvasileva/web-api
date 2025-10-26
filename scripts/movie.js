@@ -49,7 +49,7 @@ async function fetchMovie(title) {
 
     movieResult.style.display = 'flex';
   } catch (error) {
-    errorDiv.textContent = 'Произошла ошибка при получении данных.';
+    errorDiv.textContent = 'An error occurred while receiving the data.';
     errorDiv.style.display = 'block';
   } finally {
     loadingDiv.style.display = 'none';
@@ -62,7 +62,7 @@ searchBtn.addEventListener('click', () => {
   if (title) {
     fetchMovie(title);
   } else {
-    errorDiv.textContent = 'Пожалуйста, введите название фильма.';
+    errorDiv.textContent = 'Please enter the name of the movie.';
     errorDiv.style.display = 'block';
   }
 });

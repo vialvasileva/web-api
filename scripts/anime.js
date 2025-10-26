@@ -73,13 +73,13 @@ async function getRandomFact() {
   } catch (err) {
     console.error('getRandomFact error:', err);
     if (err.name === 'AbortError') {
-      showError('Превышено время ожидания (timeout). Попробуйте ещё раз.');
+      showError('The timeout has been exceeded. Please try again.');
     } else if (err.status === 429) {
-      showError('Слишком много запросов к API (429). Подождите минуту и попробуйте снова.');
+      showError('Too many API requests (429). Please wait a minute and try again.');
     } else if (err.status === 404) {
-      showError('Ресурс не найден (404). Попробуйте позже или используй другой endpoint.');
+      showError('Resource not found (404). Try later or use a different endpoint.');
     } else {
-      showError('Ошибка при получении данных: ' + (err.message || String(err)));
+      showError('Error when receiving data: ' + (err.message || String(err)));
     }
   } finally {
     showLoading(false);

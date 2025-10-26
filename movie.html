@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Movie Site - информация о фильме и постер по поиску, а также разные факты об аниме!">
-  <title>Поиск фильмов</title>
+  <meta name="description" content="Movie Site - information about the movie and the search poster, as well as various facts about anime!">
+  <title>Movie search</title>
   <link rel="shortcut icon" href="images/icon.png" />
   <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/movie.css">
@@ -12,12 +12,12 @@
 <body>
   <div class="container">
     <nav class="nav">
-      <a href="index.html">← Главная</a>
-      <a href="anime.html">Факты об аниме</a>
+      <a href="index.html">← Main</a>
+      <a href="anime.html">Facts about anime</a>
     </nav>
 
     <header>
-      <h1>Поиск фильмов</h1>
+      <h1>Movie search</h1>
     </header>
 
     <main>
@@ -26,15 +26,15 @@
           <input 
             type="text" 
             id="movieInput" 
-            placeholder="Введите название фильма (на английском)..."
+            placeholder="Enter the name of the movie (in English)..."
             class="input-field"
           >
-          <button id="searchBtn" class="btn btn-primary">Получить информацию</button>
+          <button id="searchBtn" class="btn btn-primary">Get information</button>
         </div>
 
         <div id="loading" class="loading" style="display: none;">
           <div class="spinner"></div>
-          <p>Загрузка...</p>
+          <p>Loading...</p>
         </div>
 
         <div id="error" class="error" style="display: none;"></div>
@@ -46,13 +46,13 @@
           <div class="movie-info">
             <h2 id="movieTitle"></h2>
             <div class="movie-details">
-              <p><strong>Год:</strong> <span id="movieYear"></span></p>
-              <p><strong>Жанр:</strong> <span id="movieGenre"></span></p>
-              <p><strong>Режиссер:</strong> <span id="movieDirector"></span></p>
-              <p><strong>Актеры:</strong> <span id="movieActors"></span></p>
-              <p><strong>Сюжет:</strong> <span id="moviePlot"></span></p>
-              <p><strong>Рейтинг IMDb:</strong> <span id="movieRating"></span></p>
-              <p><strong>Длительность:</strong> <span id="movieRuntime"></span></p>
+              <p><strong>Year:</strong> <span id="movieYear"></span></p>
+              <p><strong>Genre:</strong> <span id="movieGenre"></span></p>
+              <p><strong>Director:</strong> <span id="movieDirector"></span></p>
+              <p><strong>Actors:</strong> <span id="movieActors"></span></p>
+              <p><strong>Plot:</strong> <span id="moviePlot"></span></p>
+              <p><strong>Rating IMDb:</strong> <span id="movieRating"></span></p>
+              <p><strong>Duration:</strong> <span id="movieRuntime"></span></p>
             </div>
           </div>
         </div>
@@ -60,8 +60,8 @@
     </main>
 
     <footer class="footer">
-      <p class="footer-text">© 2025 Movie site. Команда студентов.</p>
-      <p class="footer-text">Учебный проект по веб-разработке</p>
+      <p class="footer-text">© 2025 Movie site. Student team.</p>
+      <p class="footer-text">Web development training project</p>
     </footer>
   </div>
 
