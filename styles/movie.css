@@ -57,6 +57,7 @@
   background: var(--card-bg);
   padding: 30px;
   border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .movie-poster img {
@@ -85,4 +86,8 @@
 .movie-details strong {
   color: var(--primary-color);
   margin-right: 10px;
+}
+
+.nav a:hover {
+  color: var(--primary-color);
 }
