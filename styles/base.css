@@ -211,37 +211,31 @@ body {
 }
 
 /* Адаптивность */
-@media (max-width: 768px) {
-  .header-title {
-    font-size: 1.2rem;
-  }
-}
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .header-title {
     font-size: 1.1rem;
   }
-  
+
   .header-center {
     position: static;
     transform: none;
-    order: 2;
     flex: 1;
     text-align: center;
   }
   
   .header-container {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
   }
   
   .logo {
-    order: 1;
-    flex: 1;
+    flex: 0 1 auto; 
+    min-width: 0;
   }
   
   .theme-toggle {
-    order: 3;
+    flex: 0 0 auto;
   }
 }
 
