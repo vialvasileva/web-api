@@ -6,6 +6,8 @@ interface LayoutProps {
   children: ReactNode;
 }
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function Layout({ children }: LayoutProps) {
   const { theme, toggleTheme } = useTheme();
 
@@ -14,7 +16,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className="fixed-header">
         <div className="header-container">
           <Link to="/" className="logo">
-            <img src="src/images/icon.png" alt="Camera" className="logo-img" />
+            <img src={`${BASE_URL}images/icon.png`} alt="Camera" className="logo-img" />
             <span className="logo-text">MovieSite</span>
           </Link>
           <button
