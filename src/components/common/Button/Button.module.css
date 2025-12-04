@@ -1,0 +1,105 @@
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  min-height: 48px;
+  white-space: nowrap;
+  color: white;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, var(--secondary-color), #f43f5e);
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(230, 44, 103, 0.4);
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+}
+
+.secondary {
+  background: linear-gradient(135deg, var(--secondary-color), #f43f5e);
+}
+
+/* Размеры */
+.small {
+  padding: 8px 20px;
+  font-size: 0.875rem;
+  min-height: 40px;
+}
+
+.medium {
+  padding: 12px 30px;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  min-height: auto;
+}
+
+/* States */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.loading {
+  position: relative;
+  color: transparent;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: buttonSpin 0.8s linear infinite;
+}
+
+@keyframes buttonSpin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Adaptability */
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

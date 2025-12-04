@@ -1,0 +1,35 @@
+/* Movie search */
+.search-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 60px; 
+  /* min-height: calc(100vh - 160px); */
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+/* Error */
+.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--error-color);
+  margin: 40px 0;
+}
+
+/* Adaptability */
+@media (max-width: 768px) {
+  .search-section {
+    padding: 20px 15px 40px;
+    min-height: calc(100vh - 140px);
+  }
+}

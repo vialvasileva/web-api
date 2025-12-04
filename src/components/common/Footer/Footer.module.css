@@ -1,0 +1,25 @@
+.footer {
+  border-top: 1px solid var(--text-muted);
+  padding: 2rem 0;
+  text-align: center;
+  /* margin-top: 4rem; */
+  opacity: 0.8;
+}
+
+.footer-text {
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+/* Light theme */
+[data-theme="light"] .footer {
+  border-top: 1px solid var(--text-muted);
+}
+
+/* Adaptability */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+}

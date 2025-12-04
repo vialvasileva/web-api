@@ -1,4 +1,11 @@
-/* Карточки возможностей */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  /* min-height: calc(100vh - 160px);  */
+}
+
+/* Opportunity cards */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -39,9 +46,10 @@
 .feature-card p {
   color: var(--text-muted);
   margin-bottom: 25px;
+  line-height: 1.6;
 }
 
-/* Информационная секция */
+/* Information Section */
 .info-section {
   background: var(--card-bg);
   padding: 30px;
@@ -52,13 +60,54 @@
 .info-section h3 {
   margin-bottom: 15px;
   color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.info-section p {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .info-section ul {
   list-style-position: inside;
   color: var(--text-muted);
+  padding-left: 0;
 }
 
 .info-section li {
   margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.info-section strong {
+  color: var(--text-color);
+}
+
+/* Link styles for buttons */
+.link {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Adaptability */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    min-height: calc(100vh - 140px);
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    padding: 30px 20px;
+  }
+  
+  .info-section {
+    padding: 20px;
+  }
 }

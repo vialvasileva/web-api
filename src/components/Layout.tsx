@@ -1,42 +1,20 @@
-import { ReactNode } from 'react';
-import { Link } from 'react-router-dom';
-import { useTheme } from '../contexts/ThemeContext';
+import React, { ReactNode } from 'react';
+import { Header } from './common/Header/Header';
+import { Footer } from './common/Footer/Footer';
+import styles from './Layout.module.css';
 
 interface LayoutProps {
   children: ReactNode;
 }
 
-const BASE_URL = import.meta.env.BASE_URL;
-
-export default function Layout({ children }: LayoutProps) {
-  const { theme, toggleTheme } = useTheme();
-
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="container">
-      <header className="fixed-header">
-        <div className="header-container">
-          <Link to="/" className="logo">
-            <img src={`${BASE_URL}images/icon.png`} alt="Camera" className="logo-img" />
-            <span className="logo-text">MovieSite</span>
-          </Link>
-          <button
-            onClick={toggleTheme}
-            className="theme-toggle"
-            title={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
-          >
-            <span className="theme-icon">{theme === 'light' ? '☀️' : '🌙'}</span>
-          </button>
-        </div>
-      </header>
-
+      <Header />
       <main style={{ paddingTop: '80px' }}>
         {children}
       </main>
-
-      <footer className="footer">
-        <p className="footer-text">© 2025 Movie site. Student team.</p>
-        <p className="footer-text">Web development training project</p>
-      </footer>
+      <Footer />
     </div>
   );
-}
+};

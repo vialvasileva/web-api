@@ -1,18 +1,3 @@
-/* Аниме секция */
-.anime-section {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.anime-card {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.fact-result {
-  margin-top: 30px;
-}
-
 .fact-card {
   background: var(--card-bg);
   padding: 40px;
@@ -32,6 +17,9 @@
 .fact-header h2 {
   color: var(--secondary-color);
   font-size: 1.8rem;
+  margin: 0;
+  flex: 1;
+  text-align: left;
 }
 
 .anime-id {
@@ -40,25 +28,42 @@
   border-radius: 20px;
   font-size: 0.9rem;
   color: var(--secondary-color);
+  white-space: nowrap;
+  margin-left: 20px;
 }
 
 .fact-content p {
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--text-color);
+  margin: 0;
+  text-align: left;
+  white-space: pre-line;
 }
 
-.info-box {
-  background: var(--card-bg);
-  padding: 25px;
-  border-radius: var(--border-radius);
-  border-left: 4px solid var(--secondary-color);
-}
-
-.info-box p {
-  color: var(--text-muted);
-}
-
-.nav a:hover {
-  color: var(--secondary-color);
+/* Adaptability */
+@media (max-width: 768px) {
+  .fact-card {
+    padding: 30px 20px;
+  }
+  
+  .fact-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .fact-header h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  
+  .anime-id {
+    margin-left: 0;
+  }
+  
+  .fact-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
 }
